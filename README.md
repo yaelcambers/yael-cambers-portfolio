@@ -1,48 +1,19 @@
-# Yael Replica Next
+Sitio espejo de Framer con único cambio: tipografía forzada a Helvetica.
 
-Replica visual del sitio de referencia en Framer, construida con Next.js y React.
+Ruta principal:
+- index.html
 
-## Stack
+Rutas incluidas:
+- contact.html
+- projects/index.html
+- projects/mienteme.html
+- projects/mezcal-don-torres.html
+- projects/coral-guayaberas.html
+- projects/moveza.html
+- projects/los-guitarrazos.html
 
-- Next.js 15
-- React 19
-- TypeScript
-- Framer Motion
-- CSS global con fuente: `"Helvetica Neue", Helvetica, Arial, sans-serif`
+Cambio aplicado:
+- Se inyectó en cada HTML:
+  <style id="helvetica-override">html, body, :where(*, *::before, *::after) { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important; }</style>
 
-## Correr local
-
-```bash
-npm install
-npm run dev
-```
-
-Abre [http://localhost:3000](http://localhost:3000)
-
-## Build producción
-
-```bash
-npm run build
-npm run start
-```
-
-## Deploy en Vercel
-
-1. Sube esta carpeta como proyecto Git.
-2. En Vercel crea un proyecto nuevo.
-3. Framework: `Next.js` (auto-detectado).
-4. Build command: `npm run build`.
-5. Output: automático de Next.
-
-## Deploy en Netlify
-
-1. Crea sitio nuevo desde Git.
-2. Build command: `npm run build`.
-3. Publish directory: `.next`.
-4. Usa el plugin oficial de Netlify para Next.js (`@netlify/plugin-nextjs`) o Build Image que lo detecte automáticamente.
-
-## Metadata incluida
-
-- `<title>Yael Cambers</title>`
-- Open Graph y Twitter Card con imagen principal de hero
-- Favicon `C` en estilo Helvetica (archivo `app/icon.svg`)
+No se modificó estructura ni animaciones de Framer.

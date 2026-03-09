@@ -1,0 +1,13 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/index.html" },
+    { "source": "/contact", "destination": "/contact/index.html" },
+    { "source": "/projects", "destination": "/projects/index.html" },
+    { "source": "/projects/mienteme", "destination": "/projects/mienteme.html" },
+    { "source": "/projects/mi%C3%A9nteme", "destination": "/projects/mienteme.html" },
+    { "source": "/projects/mezcal-don-torres", "destination": "/projects/mezcal-don-torres.html" },
+    { "source": "/projects/coral-guayaberas", "destination": "/projects/coral-guayaberas.html" },
+    { "source": "/projects/moveza", "destination": "/projects/moveza.html" },
+    { "source": "/projects/los-guitarrazos", "destination": "/projects/los-guitarrazos.html" }
+  ]
+}
